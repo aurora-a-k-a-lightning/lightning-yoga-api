@@ -60,62 +60,65 @@ https://lightning-yoga-api.herokuapp.com/yoga_poses/1
 
 ##### list of yoga poses:
 ```json
-[
-    {
-        "id": 1,
-        "sanskrit_name": "Navasana",
-        "english_name": "Boat",
-        "img_url": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
-        "yoga_category_id": 1,
-        "created_at": "2016-01-14T22:23:39.902Z",
-        "updated_at": "2016-01-14T22:23:39.902Z",
-        "yoga_category": {
+{
+    "items": [
+        {
             "id": 1,
-            "name": "Hatha",
-            "short_name": "hatha",
-            "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
-            "parent_yoga_category_id": null,
-            "created_at": "2018-06-21T04:58:24.782Z",
-            "updated_at": "2018-06-21T04:58:24.782Z"
+            "sanskrit_name": "Navasana",
+            "english_name": "Boat",
+            "img_url": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
+            "yoga_category_id": 1,
+            "created_at": "2016-01-14T22:23:39.902Z",
+            "updated_at": "2016-01-14T22:23:39.902Z",
+            "yoga_category": {
+                "id": 1,
+                "name": "Hatha",
+                "short_name": "hatha",
+                "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
+                "parent_yoga_category_id": null,
+                "created_at": "2018-06-21T04:58:24.782Z",
+                "updated_at": "2018-06-21T04:58:24.782Z"
+            }
+        },
+        {
+            "id": 2,
+            "sanskrit_name": "Ardha Navasana",
+            "english_name": "Half-Boat",
+            "img_url": "https://www.dropbox.com/s/1nx0r94msxjwvyp/boatbentlegs.svg?raw=1",
+            "yoga_category_id": 1,
+            "created_at": "2016-01-14T22:23:39.909Z",
+            "updated_at": "2016-01-14T22:23:39.909Z",
+            "yoga_category": {
+                "id": 1,
+                "name": "Hatha",
+                "short_name": "hatha",
+                "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
+                "parent_yoga_category_id": null,
+                "created_at": "2018-06-21T04:58:24.782Z",
+                "updated_at": "2018-06-21T04:58:24.782Z"
+            }
+        },
+        {
+            "id": 3,
+            "sanskrit_name": "Dhanurasana",
+            "english_name": "Bow",
+            "img_url": "https://www.dropbox.com/s/wizj5kwxvez4c0a/bow.svg?raw=1",
+            "yoga_category_id": 1,
+            "created_at": "2016-01-14T22:23:39.912Z",
+            "updated_at": "2016-01-14T22:23:39.912Z",
+            "yoga_category": {
+                "id": 1,
+                "name": "Hatha",
+                "short_name": "hatha",
+                "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
+                "parent_yoga_category_id": null,
+                "created_at": "2018-06-21T04:58:24.782Z",
+                "updated_at": "2018-06-21T04:58:24.782Z"
+            }
         }
-    },
-    {
-        "id": 2,
-        "sanskrit_name": "Ardha Navasana",
-        "english_name": "Half-Boat",
-        "img_url": "https://www.dropbox.com/s/1nx0r94msxjwvyp/boatbentlegs.svg?raw=1",
-        "yoga_category_id": 1,
-        "created_at": "2016-01-14T22:23:39.909Z",
-        "updated_at": "2016-01-14T22:23:39.909Z",
-        "yoga_category": {
-            "id": 1,
-            "name": "Hatha",
-            "short_name": "hatha",
-            "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
-            "parent_yoga_category_id": null,
-            "created_at": "2018-06-21T04:58:24.782Z",
-            "updated_at": "2018-06-21T04:58:24.782Z"
-        }
-    },
-    {
-        "id": 3,
-        "sanskrit_name": "Dhanurasana",
-        "english_name": "Bow",
-        "img_url": "https://www.dropbox.com/s/wizj5kwxvez4c0a/bow.svg?raw=1",
-        "yoga_category_id": 1,
-        "created_at": "2016-01-14T22:23:39.912Z",
-        "updated_at": "2016-01-14T22:23:39.912Z",
-        "yoga_category": {
-            "id": 1,
-            "name": "Hatha",
-            "short_name": "hatha",
-            "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
-            "parent_yoga_category_id": null,
-            "created_at": "2018-06-21T04:58:24.782Z",
-            "updated_at": "2018-06-21T04:58:24.782Z"
-        }
-    }
-]
+    ]
+}
+
 ```
 
 #### single yoga pose
@@ -178,48 +181,50 @@ https://lightning-yoga-api.herokuapp.com/yoga_categories/1
 ##### list of yoga categories:
 
 ```json
-[
-    {
-        "id": 1,
-        "name": "Hatha",
-        "short_name": "hatha",
-        "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
-        "parent_yoga_category_id": null,
-        "created_at": "2018-06-21T04:58:24.782Z",
-        "updated_at": "2018-06-21T04:58:24.782Z",
-        "yoga_poses": [
-            {
+{
+    "items": [
+        {
             "id": 1,
-            "sanskrit_name": "Navasana",
-            "english_name": "Boat",
-            "img_url": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
-            "yoga_category_id": 1,
-            "created_at": "2016-01-14T22:23:39.902Z",
-            "updated_at": "2016-01-14T22:23:39.902Z"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Iyengar",
-        "short_name": "iyengar",
-        "description": "Iyengar yoga was founded by B.K.S. Iyengar and focuses on alignment as well as detailed and precise movements. In an Iyengar class, students perform a variety of postures while controlling the breath. Generally, poses are held for a long time while adjusting the minutiae of the pose. Iyengar relies heavily on props to help students perfect their form and go deeper into poses in a safe manner. Although you won’t jump around, you will definitely get a workout and feel incredibly open and relaxed after an Iyengar class. This style is really great for people with injuries who need to work slowly and methodically.",
-        "parent_yoga_category_id": null,
-        "created_at": "2018-06-21T04:58:24.812Z",
-        "updated_at": "2018-06-21T04:58:24.812Z",
-        "yoga_poses": []
-    },
-    {
-        "id": 3,
-        "name": "Kundalini",
-        "short_name": "kundalini",
-        "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy in your body said to be trapped, or coiled, in the lower spine. These classes really work your core and breathing with fast-moving, invigorating postures and breath exercises. These classes are pretty intense and can involve chanting, mantra, and meditation.",
-        "parent_yoga_category_id": null,
-        "created_at": "2018-06-21T04:58:24.814Z",
-        "updated_at": "2018-06-21T04:58:24.814Z",
-        "yoga_poses": []
-    }
-]
+            "name": "Hatha",
+            "short_name": "hatha",
+            "description": "The Sanskrit term \"hatha\" is an umbrella term for all physical postures of yoga. In the West, hatha yoga simply refers to all the other styles of yoga (Ashtanga, Iyengar, etc.) that are grounded in a physical practice. However, there are other branches of yoga such as kriya, raja, and karma yoga that are separate from the physical-based yoga practice. The physical-based yoga is the most popular and has numerous styles. Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
+            "parent_yoga_category_id": null,
+            "created_at": "2018-06-21T04:58:24.782Z",
+            "updated_at": "2018-06-21T04:58:24.782Z",
+            "yoga_poses": [
+                {
+                "id": 1,
+                "sanskrit_name": "Navasana",
+                "english_name": "Boat",
+                "img_url": "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
+                "yoga_category_id": 1,
+                "created_at": "2016-01-14T22:23:39.902Z",
+                "updated_at": "2016-01-14T22:23:39.902Z"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Iyengar",
+            "short_name": "iyengar",
+            "description": "Iyengar yoga was founded by B.K.S. Iyengar and focuses on alignment as well as detailed and precise movements. In an Iyengar class, students perform a variety of postures while controlling the breath. Generally, poses are held for a long time while adjusting the minutiae of the pose. Iyengar relies heavily on props to help students perfect their form and go deeper into poses in a safe manner. Although you won’t jump around, you will definitely get a workout and feel incredibly open and relaxed after an Iyengar class. This style is really great for people with injuries who need to work slowly and methodically.",
+            "parent_yoga_category_id": null,
+            "created_at": "2018-06-21T04:58:24.812Z",
+            "updated_at": "2018-06-21T04:58:24.812Z",
+            "yoga_poses": []
+        },
+        {
+            "id": 3,
+            "name": "Kundalini",
+            "short_name": "kundalini",
+            "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy in your body said to be trapped, or coiled, in the lower spine. These classes really work your core and breathing with fast-moving, invigorating postures and breath exercises. These classes are pretty intense and can involve chanting, mantra, and meditation.",
+            "parent_yoga_category_id": null,
+            "created_at": "2018-06-21T04:58:24.814Z",
+            "updated_at": "2018-06-21T04:58:24.814Z",
+            "yoga_poses": []
+        }
+    ]
+}
 ```
 
 ##### single yoga category
