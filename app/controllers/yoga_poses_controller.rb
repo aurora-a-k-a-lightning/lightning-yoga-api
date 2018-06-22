@@ -11,7 +11,7 @@ class YogaPosesController < ApplicationController
                                                 :english_name
     ))
 
-    render json: @yoga_poses.as_json(include: [:yoga_category])
+    render json: {items: @yoga_poses.as_json(include: [:yoga_category])}
   end
 
   # GET /yoga_poses/1
