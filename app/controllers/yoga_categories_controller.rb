@@ -3,10 +3,11 @@ class YogaCategoriesController < ApplicationController
 
   # GET /yoga_categories
   def index
-    @yoga_categories = YogaCategory.all.filter(params.slice(
+    filter = params.slice(
         :yoga_category_name,
         :yoga_category_short_name,
-    ))
+        )
+    @yoga_categories = YogaCategory.all.filter(filter).distinct.sort
 
     render json: {items: @yoga_categories.as_json(include: [:yoga_poses])}
   end
