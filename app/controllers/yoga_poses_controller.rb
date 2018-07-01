@@ -3,7 +3,7 @@ class YogaPosesController < ApplicationController
 
   # GET /yoga_poses
   def index
-    @yoga_poses = YogaPose.all.joins(:yoga_category).filter(params.slice(
+    @yoga_poses = YogaPose.all.joins(:yoga_categories).filter(params.slice(
                                                 :yoga_category_id,
                                                 :yoga_category_name,
                                                 :yoga_category_short_name,
@@ -11,12 +11,12 @@ class YogaPosesController < ApplicationController
                                                 :english_name
     ))
 
-    render json: {items: @yoga_poses.as_json(include: [:yoga_category])}
+    render json: {items: @yoga_poses.as_json(include: [:yoga_categories])}
   end
 
   # GET /yoga_poses/1
   def show
-    render json: @yoga_pose.as_json(include: [:yoga_category])
+    render json: @yoga_pose.as_json(include: [:yoga_categories])
   end
 
   # POST /yoga_poses
@@ -24,7 +24,7 @@ class YogaPosesController < ApplicationController
     @yoga_pose = YogaPose.new(yoga_pose_params)
 
     if @yoga_pose.save
-      render json: @yoga_pose.as_json(include: [:yoga_category]), status: :created, location: @yoga_pose
+      render json: @yoga_pose.as_json(include: [:yoga_categories]), status: :created, location: @yoga_pose
     else
       render json: @yoga_pose.errors, status: :unprocessable_entity
     end
@@ -33,7 +33,7 @@ class YogaPosesController < ApplicationController
   # PATCH/PUT /yoga_poses/1
   def update
     if @yoga_pose.update(yoga_pose_params)
-      render json: @yoga_pose.as_json(include: [:yoga_category])
+      render json: @yoga_pose.as_json(include: [:yoga_categories])
     else
       render json: @yoga_pose.errors, status: :unprocessable_entity
     end

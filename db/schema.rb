@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180621042838) do
+ActiveRecord::Schema.define(version: 20180701011738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,15 +24,21 @@ ActiveRecord::Schema.define(version: 20180621042838) do
     t.datetime "updated_at",              null: false
   end
 
+  create_table "yoga_pose_yoga_categories", force: :cascade do |t|
+    t.integer "yoga_category_id"
+    t.integer "yoga_pose_id"
+    t.index ["yoga_category_id"], name: "index_yoga_pose_yoga_categories_on_yoga_category_id", using: :btree
+    t.index ["yoga_pose_id"], name: "index_yoga_pose_yoga_categories_on_yoga_pose_id", using: :btree
+  end
+
   create_table "yoga_poses", force: :cascade do |t|
     t.string   "sanskrit_name"
     t.string   "english_name"
     t.string   "img_url"
-    t.integer  "yoga_category_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.index ["yoga_category_id"], name: "index_yoga_poses_on_yoga_category_id", using: :btree
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
-  add_foreign_key "yoga_poses", "yoga_categories"
+  add_foreign_key "yoga_pose_yoga_categories", "yoga_categories"
+  add_foreign_key "yoga_pose_yoga_categories", "yoga_poses"
 end

@@ -1,6 +1,7 @@
 class YogaPose < ApplicationRecord
   include Filterable
-  belongs_to :yoga_category
+  has_many :yoga_pose_yoga_categories
+  has_many :yoga_categories, through: :yoga_pose_yoga_categories
 
   scope :yoga_category_id, -> (yc_id) { where yoga_category_id: yc_id }
   scope :yoga_category_name, -> (yc_name) { where('lower(yoga_categories.name) like ?', "%#{yc_name.downcase}%") }

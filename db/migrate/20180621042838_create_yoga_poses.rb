@@ -4,7 +4,6 @@ class CreateYogaPoses < ActiveRecord::Migration[5.0]
       t.string :sanskrit_name
       t.string :english_name
       t.string :img_url
-      t.belongs_to :yoga_category, foreign_key: true
 
       t.timestamps
     end
